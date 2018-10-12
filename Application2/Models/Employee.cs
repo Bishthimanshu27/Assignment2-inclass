@@ -12,10 +12,10 @@ namespace Application2.Models.Classes
         public string Name { get; set; }
         public int RegistrationNumber { get; set; }
 
-        [InverseProperty("SaleMaker")]
-        public ICollection<Sale> MakerSales { get; set; }
+        [InverseProperty("EmployeeToMakeSales")]
+        public ICollection<Sale> SalesMaker { get; set; }
 
-        [InverseProperty("SaleAprover")]
-        public ICollection<Sale> AproverSales { get; set; }
+        [InverseProperty("EmployeeToApproveSales")]
+        public ICollection<Sale> SalesApprover { get; set; }
     }
 }

@@ -16,8 +16,8 @@ namespace Application2.Models.Classes
         public StoreLocation StoreLocationId { get; set; }
         public virtual StoreLocation StoreLocation { get; set; }
 
-        public string EmployeeId { get; set; }
-        public virtual Employee Employee { get; set; }
+        public string EmployeeToMakeSalesId { get; set; }
+        public virtual Employee EmployeeToMakeSales { get; set; }
 
         public string EmployeeToApproveSalesId { get; set; }
         public virtual Employee EmployeeToApproveSales { get; set; }
